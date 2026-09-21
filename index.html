@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tømrermester Kim Frederiksen | Kvalitets Tømrerarbejde i Nørresundby</title>
+    <style>
+        :root {
+            --bg-dark: #1a1a1a;
+            --bg-card: #242424;
+            --accent: #ff9d00; /* Строительный желто-оранжевый */
+            --wood: #8b5a2b;
+            --text-main: #f4f4f4;
+            --text-sub: #a0a0a0;
+            --border: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #111111;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--accent);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.9)), 
+                        url('https://images.unsplash.com/photo-1581141849291-1125c7b692b5?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            padding: 120px 20px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: #111;
+            padding: 5px 15px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .hero p {
+            color: #cccccc;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 35px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #111;
+            text-decoration: none;
+            padding: 16px 35px;
+            border-radius: 4px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: #ffaa22;
+            transform: translateY(-3px);
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 70px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section-title span {
+            color: var(--accent);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 70px;
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 4px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .service-card p {
+            color: var(--text-sub);
+            font-size: 0.95rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .info-box {
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+
+        .info-box h3 {
+            color: var(--accent);
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .info-row {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            display: flex;
+        }
+
+        .info-row strong {
+            width: 100px;
+            color: #ffffff;
+        }
+
+        .map-box iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 350px;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            filter: grayscale(80%) invert(90%);
+        }
+
+        footer {
+            background: #111111;
+            text-align: center;
+            padding: 30px 20px;
+            color: var(--text-sub);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Tømrermester <span>Kim Frederiksen</span></div>
+        <nav>
+            <a href="#arbejde">Arbejdsområder</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="badge">Etableret 2005 • Solidt Håndværk</div>
+        <h1>Dit Lokale Tømrerfirma i Nørresundby</h1>
+        <p>Vi leverer professionelt tømrer- og snedkerarbejde til aftalt tid og pris. Fra små reparationer til store byggeprojekter.</p>
+        <a href="tel:+4520973079" class="cta-btn">Få et uforpligtende tilbud</a>
+    </div>
+
+    <div class="container">
+        
+        <h2 class="section-title" id="arbejde">Hvad vi <span>tilbyder</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Vinduer & Døre</h3>
+                <p>Udskiftning og montering af energirigtige vinduer og døre. Spar på varmeregningen med korrekt monteret kvalitetstræ eller træ/alu.</p>
+            </div>
+            <div class="service-card">
+                <h3>Tagarbejde</h3>
+                <p>Renovering, reparation eller lægning af helt nyt tag. Vi sikrer en tæt og holdbar løsning, der beskytter dit hus mod vind og vejr.</p>
+            </div>
+            <div class="service-card">
+                <h3>Tilbygning & Ombygning</h3>
+                <p>Skal huset udvides, eller mangler du et nyt træterrasse? Vi bygger alt fra små carporte til komplette tilbygninger.</p>
+            </div>
+            <div class="service-card">
+                <h3>Snedkerarbejde</h3>
+                <p>Specialopgaver, lægning af trægulve, opsætning af lofter og indbygningsskabe med fokus på den sidste finish.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="kontakt">Kontakt <span>Os</span></h2>
+        <div class="contact-grid">
+            <div class="info-box">
+                <h3>Tømrermester Kim Frederiksen ApS</h3>
+                <div class="info-row"><strong>Adresse:</strong> <span>Godthåbsgade 39, 9400 Nørresundby</span></div>
+                <div class="info-row"><strong>Telefon:</strong> <span>20 97 30 79</span></div>
+                <div class="info-row"><strong>Email:</strong> <span>tmfc@stofanet.dk</span></div>
+                <div class="info-row"><strong>CVR:</strong> <span>28869878</span></div>
+                
+                <p style="margin-top: 25px; color: var(--text-sub);">Ring eller skriv en mail for en uforpligtende snak om dit næste byggeprojekt.</p>
+            </div>
+
+            <div class="map-box">
+                <iframe src="https://maps.google.com/maps?q=Godthåbsgade%2039,%209400%20Nørresundby&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Tømrermester Kim Frederiksen ApS. CVR: 28869878. Udviklet af Andrii Hrebniev.
+    </footer>
+
+</body>
+</html>
