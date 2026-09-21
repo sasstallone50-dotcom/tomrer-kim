@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tømrermester Kim Frederiksen | Kvalitets Tømrerarbejde i Nørresundby</title>
+    <title>Bergs Tømrer & Snedker ApS | Kvalitetshåndværk i Nørresundby</title>
     <style>
         :root {
             --bg-dark: #1a1a1a;
             --bg-card: #242424;
-            --accent: #ff9d00; /* Строительный желто-оранжевый */
+            --accent: #ff9d00;
             --wood: #8b5a2b;
             --text-main: #f4f4f4;
             --text-sub: #a0a0a0;
@@ -73,19 +73,6 @@
             text-align: center;
         }
 
-        .badge {
-            display: inline-block;
-            background: var(--accent);
-            color: #111;
-            padding: 5px 15px;
-            border-radius: 3px;
-            font-size: 0.85rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin-bottom: 25px;
-            letter-spacing: 1px;
-        }
-
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 800;
@@ -99,24 +86,6 @@
             font-size: 1.2rem;
             max-width: 600px;
             margin: 0 auto 35px;
-        }
-
-        .cta-btn {
-            display: inline-block;
-            background: var(--accent);
-            color: #111;
-            text-decoration: none;
-            padding: 16px 35px;
-            border-radius: 4px;
-            font-weight: 800;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            transition: transform 0.2s, background 0.3s;
-        }
-
-        .cta-btn:hover {
-            background: #ffaa22;
-            transform: translateY(-3px);
         }
 
         .container {
@@ -186,11 +155,17 @@
             margin-bottom: 15px;
             font-size: 1.05rem;
             display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Четкий отступ между элементами */
         }
 
         .info-row strong {
-            width: 100px;
+            min-width: 80px;
             color: #ffffff;
+        }
+        
+        .info-row span {
+            word-break: break-word; /* Защита от слипания длинного текста */
         }
 
         .map-box iframe {
@@ -228,7 +203,7 @@
 <body>
 
     <header>
-        <div class="logo">Tømrermester <span>Kim Frederiksen</span></div>
+        <div class="logo">Bergs Tømrer & <span>Snedker</span></div>
         <nav>
             <a href="#arbejde">Arbejdsområder</a>
             <a href="#kontakt">Kontakt</a>
@@ -236,10 +211,8 @@
     </header>
 
     <div class="hero">
-        <div class="badge">Etableret 2005 • Solidt Håndværk</div>
         <h1>Dit Lokale Tømrerfirma i Nørresundby</h1>
         <p>Vi leverer professionelt tømrer- og snedkerarbejde til aftalt tid og pris. Fra små reparationer til store byggeprojekter.</p>
-        <a href="tel:+4520973079" class="cta-btn">Få et uforpligtende tilbud</a>
     </div>
 
     <div class="container">
@@ -267,24 +240,24 @@
         <h2 class="section-title" id="kontakt">Kontakt <span>Os</span></h2>
         <div class="contact-grid">
             <div class="info-box">
-                <h3>Tømrermester Kim Frederiksen ApS</h3>
-                <div class="info-row"><strong>Adresse:</strong> <span>Godthåbsgade 39, 9400 Nørresundby</span></div>
-                <div class="info-row"><strong>Telefon:</strong> <span>20 97 30 79</span></div>
-                <div class="info-row"><strong>Email:</strong> <span>tmfc@stofanet.dk</span></div>
-                <div class="info-row"><strong>CVR:</strong> <span>28869878</span></div>
+                <h3>Bergs Tømrer & Snedker ApS</h3>
+                <div class="info-row"><strong>Adresse:</strong> <span>Brotorvet 3, 2. sal, 9400 Nørresundby</span></div>
+                <div class="info-row"><strong>Telefon:</strong> <span>30 35 53 33</span></div>
+                <div class="info-row"><strong>Email:</strong> <span>bergstoemrersnedker@gmail.com</span></div>
+                <div class="info-row"><strong>CVR:</strong> <span>43310291</span></div>
                 
                 <p style="margin-top: 25px; color: var(--text-sub);">Ring eller skriv en mail for en uforpligtende snak om dit næste byggeprojekt.</p>
             </div>
 
             <div class="map-box">
-                <iframe src="https://maps.google.com/maps?q=Godthåbsgade%2039,%209400%20Nørresundby&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+                <iframe src="https://maps.google.com/maps?q=Brotorvet%203,%209400%20Nørresundby&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
             </div>
         </div>
 
     </div>
 
     <footer>
-        &copy; 2026 Tømrermester Kim Frederiksen ApS. CVR: 28869878. Udviklet af Andrii Hrebniev.
+        &copy; 2026 Bergs Tømrer & Snedker ApS. CVR: 43310291. Udviklet af Andrii Hrebniev.
     </footer>
 
 </body>
